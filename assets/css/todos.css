@@ -1,0 +1,7 @@
+#container {
+    background: skyblue;
+    /* to set the width of the container */
+    width: 360px;
+    /* a trick to center the container */
+    margin: 0 auto;
+}
