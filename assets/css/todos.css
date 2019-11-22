@@ -1,12 +1,68 @@
+h1 {
+    background: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+ul {
+    /* to remove bullet points */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Roboto;
+}
+
+li {
+    background: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    /* the width and height property include the padding and border */
+    /* but not the margin */
+    /* recommended to use add prefixes web kits*/
+    box-sizing: border-box;
+    
+}
+
+/* only run when we focus on the input */
+input:focus {
+    background: white;
+    border: 3px solid #2980b9;
+}
+
+
 #container {
     /* to set the width of the container */
     width: 360px;
-    /* a trick to center the container */
-    margin: 0 auto;
-    border: 2px solid grey;
+    /* a trick to center the container using auto */
+    margin: 100px auto;
+    background: #f7f7f7;
+    /* to add a  */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .completed {
     color: gray;
     text-decoration: line-through;
 }
+
