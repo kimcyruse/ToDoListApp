@@ -1,3 +1,11 @@
+body {
+    font-family: Roboto;
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 h1 {
     background: #2980b9;
     color: white;
@@ -16,14 +24,6 @@ ul {
 
 }
 
-body {
-    font-family: Roboto;
-    background: #134E5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
 li {
     background: white;
     height: 40px;
@@ -33,6 +33,25 @@ li {
 
 li:nth-child(2n){
     background: #f7f7f7;
+}
+
+li span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    /* transparency of the element - the less the value, the less transparent it is */
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    /* transparency of the element - 1.0 is default */
+    opacity: 1.0;
 }
 
 input {
@@ -55,25 +74,6 @@ input:focus {
     border: 3px solid #2980b9;
 }
 
-span {
-    background: #e74c3c;
-    height: 40px;
-    margin-right: 20px;
-    text-align: center;
-    color: white;
-    width: 0;
-    display: inline-block;
-    transition: 0.2s linear;
-    /* transparency of the element - the less the value, the less transparent it is */
-    opacity: 0;
-}
-
-li:hover span{
-    width: 40px;
-    /* transparency of the element - 1.0 is default */
-    opacity: 1.0;
-}
-
 
 #container {
     /* to set the width of the container */
@@ -88,6 +88,7 @@ li:hover span{
 .fa-plus {
     float: right;
 }
+
 .completed {
     color: gray;
     text-decoration: line-through;

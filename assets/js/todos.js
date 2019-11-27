@@ -34,3 +34,9 @@ $("input[type='text']").on("keypress", function(event){
         $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + " </li>");
     }
 });
+
+// TOGGLE THE INPUT IN/OUT
+$(".fa-plus").click(function(){
+    // fadeToggle() - keep track of the state if it needs to be faded in/out
+    $("input[type='text']").fadeToggle();
+})
